@@ -40,7 +40,9 @@ export default class MDCTemporaryDrawerFoundation extends MDCSlidableDrawerFound
       MDCTemporaryDrawerFoundation.cssClasses.ANIMATING,
       MDCTemporaryDrawerFoundation.cssClasses.OPEN);
 
-    this.componentClickHandler_ = (e) => if (e.target == e.currentTarget) { this.close() };
+    this.componentClickHandler_ = (e) => {
+      if (e.target == e.currentTarget) { this.close() };
+    }
   }
 
   init() {
